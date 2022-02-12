@@ -1,0 +1,23 @@
+Assignment-2:
+-------------------------
+''' Write a program to compare two numbers are 
+1.equal.
+2.Not equal.
+3.one num is greater than another one.
+4.one num is smaller than another one. '''
+------------------------------------------------------------------------
+a=float(input('Enter first number: '))
+b=float(input('Enter second number: '))
+print('Entered 2 numbers are equal') if(a==b) else print('Entered 2 numbers are not equal')
+print('First number is greater than second number') if(a>=b) else print('First number is smaller than second number')
+O/p:
+--------
+Enter first number: 9
+Enter second number: 99
+Entered 2 numbers are not equal
+First number is smaller than second number
+------------------------------------------------------------------------------
+Enter first number: 99.999
+Enter second number: 356.24
+Entered 2 numbers are not equal
+First number is smaller than second number
