@@ -1,0 +1,46 @@
+Assignment-1:
+------------------------
+''' Write a program to prepare super market bill?
+>5000
+Disc 10%
+>3000
+Disc 8%
+>2000
+Disc 5%
+>1000
+Disc 3%
+>3000
+Tax 10%
+Else
+Tax 18% 
+----------------'''
+cf=180 # Corn flour Rs. per kg
+wf=125 # Wheat flour Rs. per kg
+op=200 # Oil packet Rs. per litre
+gt=165 # Green tea Rs. per packet
+np=50 # Noodles packets Rs. per packet
+cname=input('Enter customer name: ')
+cphno=int(input('Enter mobile number: ')) 
+nq=int(input('Total items purchased: '))
+cfi=int(input('Enter quantity of Corn flour (in Kgs): '))
+wfi=int(input('Enter quantity of Wheat flour (in Kgs): '))
+opi=int(input('Enter quantity of Oil packets (in litres): '))
+gti=int(input('Enter quantity of Green tea (in packets): '))
+npi=int(input('Enter quantity of Noodles (in packets): '))
+bill=(cf*cfi)+(wf*wfi)+(op*opi)+(gt*gti)+(np*npi)
+if bill>=5000:
+  dis=bill*10/100
+  tax=bill*10/100
+elif bill>=3000:
+  dis=bill*8/100
+  tax=bill*10/100
+elif bill>=2000:
+  dis=bill*5/100
+  tax=bill*10/100
+elif bill>=1000:
+  dis=bill*3/100
+  tax=bill*10/100
+else:
+   tax=18/100
+   totalbill=bill-dis+tax
+   print(''Total amount on your purchases is:',totalbill)
